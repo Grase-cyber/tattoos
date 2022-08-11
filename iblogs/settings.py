@@ -134,3 +134,5 @@ MATERIAL_ADMIN_SITE = {
     'TITLE': 'TATTOOS INN',  # Admin site title
     'MAIN_BG_COLOR':  '#000000',  # Admin site main color, css color should be specified
 }
+
+STATIC_ROOT = 'staticfiles'
