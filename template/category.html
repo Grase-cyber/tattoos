@@ -1,0 +1,32 @@
+{%extends 'index.html'%}
+
+{%block title%} Welcome to TattooInn {%endblock%}
+
+{%block content%}
+
+<div class="container-custom">
+
+    <h3>{{cat.title}}</h3>
+    <div class="img-container">
+        <img src="/media/{{cat.image}}" class="responsive-img" style="max-height:250px; width:100%; object-fit:cover;">
+    </div>
+
+    <ul class="collection">
+
+        {%for p in posts%}
+
+    <li class="collection-item avatar">
+      <img src="/media/{{p.image}}" alt="" class="circle">
+      <a href="/blog/{{p.url}}" class="collection-item">{{p.title}}</a>
+    </li>
+
+        {% empty %}
+        <h5>No posts in this category</h5>
+
+        {%endfor%}
+
+      </ul>
+
+</div>
+
+{%endblock%}
