@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-#e+#^as)k25%qjakeikxh__sblj_9ud*bt#o7q4t0wwx@=$pjq'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -134,3 +134,5 @@ MATERIAL_ADMIN_SITE = {
     'TITLE': 'TATTOOS INN',  # Admin site title
     'MAIN_BG_COLOR':  '#000000',  # Admin site main color, css color should be specified
 }
+
+STATIC_ROOT = 'staticfiles'
